@@ -1,0 +1,2 @@
+# snake-program-java
+This is a version of the popular arcade game "Snake" created by myself using what I learned in CS3330 Object-Oriented Programming in the fall of 2020. I added a lot of extra functionality to the basic game such as being able to alter the snake speed, grid size, block size, and whether walls exist, &amp; the color scheme and music for the game are selected on random when play is pressed. Please note that I did not use any online resources or code related to an already made version of the game, &amp; any sources are cited in the code.
