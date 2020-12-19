@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="420.0" prefWidth="491.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.RecordsController">
+   <children>
+      <MenuBar prefHeight="36.0" prefWidth="491.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToUI" text="go back to home" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#goToAbout" text="view program details" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToSettings" text="edit settings" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeWindow" text="close program" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <VBox fx:id="recordsContainer" alignment="TOP_CENTER" layoutY="39.0" prefHeight="382.0" prefWidth="491.0">
+         <children>
+            <Label text="Leaderboard" textFill="GHOSTWHITE" underline="true">
+               <font>
+                  <Font name="Sitka Heading Bold" size="43.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="table" maxWidth="500.0" prefHeight="280.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="column1" maxWidth="100.0" prefWidth="100.0" style="-fx-alignment: CENTER;" text="place" />
+                <TableColumn fx:id="column2" maxWidth="250.0" prefWidth="250.0" style="-fx-alignment: CENTER;" text="name" />
+                  <TableColumn fx:id="column3" maxWidth="100.0" prefWidth="99.0" style="-fx-alignment: CENTER;" text="score" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

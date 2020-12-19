@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="528.0" prefWidth="491.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.SettingsController">
+   <children>
+      <MenuBar prefHeight="36.0" prefWidth="491.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToUI" text="go back to home" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToAbout" text="view program details" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Records">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToRecords" text="view leaderboards" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeWindow" text="close program" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="27.0" layoutY="141.0" prefHeight="55.0" prefWidth="321.0" text="Snake Speed:" textAlignment="CENTER" textFill="GHOSTWHITE">
+         <font>
+            <Font name="Sitka Text Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="429.0" prefHeight="55.0" prefWidth="146.0" text="Walls:" textAlignment="CENTER" textFill="GHOSTWHITE">
+         <font>
+            <Font name="Sitka Text Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="238.0" prefHeight="55.0" prefWidth="280.0" text="Grid Size:" textAlignment="CENTER" textFill="GHOSTWHITE">
+         <font>
+            <Font name="Sitka Text Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="51.0" text="Settings" textFill="GHOSTWHITE" underline="true">
+         <font>
+            <Font name="Sitka Heading Bold" size="62.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="difficultyMenu" layoutX="330.0" layoutY="153.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" text="MEDIUM">
+        <items>
+          <MenuItem fx:id="slow" mnemonicParsing="false" onAction="#selectSlow" text="SLOW" />
+          <MenuItem fx:id="medium" mnemonicParsing="false" onAction="#selectMedium" text="MEDIUM" />
+            <MenuItem fx:id="fast" mnemonicParsing="false" onAction="#selectFast" text="FAST" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="gridSizeMenu" layoutX="330.0" layoutY="249.0" mnemonicParsing="false" prefWidth="120.0" text="MEDIUM">
+        <items>
+          <MenuItem fx:id="smallGrid" mnemonicParsing="false" onAction="#smallGridOnClick" text="SMALL" />
+          <MenuItem fx:id="mediumGrid" mnemonicParsing="false" onAction="#mediumGridOnClick" text="MEDIUM" />
+            <MenuItem fx:id="largeGrid" mnemonicParsing="false" onAction="#largeGridOnClick" text="LARGE" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="wallsMenu" layoutX="330.0" layoutY="441.0" mnemonicParsing="false" prefWidth="120.0" text="ON">
+        <items>
+          <MenuItem fx:id="on" mnemonicParsing="false" onAction="#wallsTrue" text="ON" />
+          <MenuItem fx:id="off" mnemonicParsing="false" onAction="#wallsFalse" text="OFF" />
+        </items>
+      </MenuButton>
+      <Label layoutX="27.0" layoutY="335.0" prefHeight="55.0" prefWidth="280.0" text="Block Size:" textAlignment="CENTER" textFill="GHOSTWHITE">
+         <font>
+            <Font name="Sitka Text Italic" size="48.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="blockSizeMenu" layoutX="330.0" layoutY="347.0" mnemonicParsing="false" prefWidth="120.0" text="MEDIUM">
+         <items>
+            <MenuItem fx:id="smallBlock" mnemonicParsing="false" onAction="#smallBlockOnClick" text="SMALL" />
+            <MenuItem fx:id="mediumBlock" mnemonicParsing="false" onAction="#mediumBlockOnClick" text="MEDIUM" />
+            <MenuItem fx:id="largeBlock" mnemonicParsing="false" onAction="#largeBlockOnClick" text="LARGE" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

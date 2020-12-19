@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="491.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.AboutController">
+   <children>
+      <MenuBar layoutY="-4.0" prefHeight="36.0" prefWidth="493.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToUI" text="go back to home" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToSettings" text="edit settings" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Records">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToRecords" text="view leaderboards" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#closeWindow" text="close program" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label layoutX="190.0" layoutY="41.0" text="About" textFill="GHOSTWHITE" underline="true">
+         <font>
+            <Font name="Sitka Heading Bold" size="43.0" />
+         </font>
+      </Label>
+      <Text fill="GHOSTWHITE" layoutX="46.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    The design of 'Snake' was first showcased in the arcade game Blockade in 1976 by Gremlin. This version of the popular game, made by Noah Free in CS3330, features settings that allow the user to change the speed of the snake, size of the grid, size of the blocks, and whether walls exist. Random music &amp; color palettes are also present during the game. The game is played using either the arrow keys, 'wasd' keys, or 'okl;' keys to maneuver the snake to the highlighted blocks, which increases the size of the snake. The game ends when the snake runs into itself or (if walls are enabled) hits a wall. A score is given based on the length of the snake at the end of the game in addition to the settings selected or defaulted. A leaderboard shows the top 100 scores over time. " textAlignment="JUSTIFY" wrappingWidth="400.32269287109375">
+         <font>
+            <Font name="Sitka Display" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

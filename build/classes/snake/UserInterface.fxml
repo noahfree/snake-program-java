@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="382.0" prefWidth="491.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snake.UIController">
+   <children>
+      <MenuBar prefHeight="36.0" prefWidth="491.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToAbout" text="view program details" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Settings">
+               <items>
+                <MenuItem mnemonicParsing="false" onAction="#goToSettings" text="edit settings" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Records">
+               <items>
+                <MenuItem mnemonicParsing="false" onAction="#goToRecords" text="view leaderboards" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exit">
+               <items>
+                <MenuItem mnemonicParsing="false" onAction="#closeWindow" text="close program" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="play" layoutX="118.0" layoutY="289.0" mnemonicParsing="false" onAction="#play" prefHeight="28.0" prefWidth="256.0" style="-fx-background-color: white;" text="PLAY">
+         <font>
+            <Font name="Sitka Heading Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="118.0" layoutY="46.0" text="Snake" textFill="GHOSTWHITE" underline="true">
+         <font>
+            <Font name="Sitka Heading Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="273.0" layoutY="133.0" text="the game" textFill="GHOSTWHITE">
+         <font>
+            <Font name="Sitka Subheading Italic" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameInput" layoutX="118.0" layoutY="236.0" prefHeight="38.0" prefWidth="256.0" promptText="enter name" />
+      <BorderPane fx:id="enterName" layoutX="118.0" layoutY="186.0" prefHeight="31.0" prefWidth="256.0" visible="false">
+         <center>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="256.0" style="-fx-background-color: #ff6b6b;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#e11919" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter a name.">
+                     <font>
+                        <Font name="Cambria Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" top="5.0" />
+               </padding>
+            </HBox>
+         </center>
+         <top>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="2.0" stroke="#e11919" strokeType="INSIDE" width="256.0" BorderPane.alignment="CENTER" />
+         </top>
+         <right>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="24.0" stroke="#e11919" strokeType="INSIDE" width="2.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="2.0" stroke="#e11919" strokeType="INSIDE" width="256.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="24.0" stroke="#e11919" strokeType="INSIDE" width="2.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <Text fill="WHITE" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program created by Noah Free" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
